@@ -22,11 +22,13 @@ html, body {
     margin-top: 7px;
     color: #becee5;
   }
-.demo-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-}
+  .demo-avatar {
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 24px;
+    background-color: #fff;
+  }
 .demo-layout .demo-header .mdl-textfield {
   padding-top: 27px;
 }
