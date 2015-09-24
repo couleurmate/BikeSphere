@@ -76,6 +76,7 @@ body {
           justify-content: flex-end;
   padding: 16px;
   height: 151px;
+  margin: auto;
 }
 .demo-avatar-dropdown {
   display: -webkit-box;
@@ -131,7 +132,7 @@ body {
 .bsphere-social {
   display: inline-block;
   text-align: center;
-  padding: 30px;
+  padding: 15px;
 }
   .bsphere-help {
     padding: 10px;
