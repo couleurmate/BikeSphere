@@ -219,7 +219,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 .demo-cards h3 {
   font-size: 1em;
 }
-.demo-updates .mdl-card__title {
+  .demo-updates .mdl-card__title {
   min-height: 100px;
   background-image: url('images/bike.png');
   background-size: 50%;
