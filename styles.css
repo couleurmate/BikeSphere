@@ -26,8 +26,7 @@ body {
     padding: 5px;
     width: 80px;
     height: 80px;
-    border-radius: 24px;
-    background-color: #fff;
+    border-radius: 90px;
   }
 .demo-layout .demo-header .mdl-textfield {
   padding-top: 27px;
@@ -242,4 +241,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .date-event {
   display: block;
+}
+.mdl-badge[data-badge]:after {
+  right: -12px;
 }
