@@ -6,7 +6,7 @@
     <meta name="description" content="An online network by & for bikers">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Assistance</title>
+    <title>BikeSphere</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -38,8 +38,7 @@
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title title-bike">bike</span>
-          <span class="mdl-layout-title title-sphere">sphere</span>
+          <span class="mdl-layout-title title-bike">bike<span class="title-sphere">sphere</span></span>
           <span class="con-title">A connected bike community</span>
           <div class="mdl-layout-spacer"></div>
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
@@ -54,8 +53,8 @@
         </div>
       </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-400 mdl-color-text--blue-grey-50">
-        <header class="demo-drawer-header">
-          <img src="images/user.png" class="demo-avatar">
+        <header class="demo-drawer-header" style="padding-bottom: 4px">
+          <img src="images/user.png" class="demo-avatar" style="margin: 0 auto;">
           <div class="demo-avatar-dropdown">
             <span>biker@bikesphe.re</span>
             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
@@ -72,12 +71,24 @@
           </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--light-blue-200 mdl-color-text--white">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-800 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-800 material-icons mdl-badge" data-badge="5" role="presentation">forum</i>Winks</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-800 material-icons" role="presentation">people</i>Bikers</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-800 material-icons" role="presentation">announcement</i>Assistance</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-800 material-icons mdl-badge" data-badge="4" role="presentation">event_available</i>Events</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-800 material-icons" role="presentation">delete</i>Trash</a>
+          <a class="mdl-navigation__link" href="index.html">
+            <i class="mdl-color-text--blue-800 material-icons">home</i>Home
+          </a>
+          <a class="mdl-navigation__link" href="">
+            <i class="mdl-color-text--blue-800 material-icons mdl-badge" data-badge="5">forum</i>Winks
+          </a>
+          <a class="mdl-navigation__link" href="">
+            <i class="mdl-color-text--blue-800 material-icons">people</i>Bikers
+          </a>
+          <a class="mdl-navigation__link" href="assistance.html">
+            <i class="mdl-color-text--blue-800 material-icons">announcement</i>Assistance
+          </a>
+          <a class="mdl-navigation__link" href="">
+            <i class="mdl-color-text--blue-800 material-icons mdl-badge" data-badge="4">event_available</i>Events
+          </a>
+          <a class="mdl-navigation__link" href="">
+            <i class="mdl-color-text--blue-800 material-icons">delete</i>Trash
+          </a>
         </nav>
         <div class="mdl-layout-spacer"></div>
         <span class="bsphere-social">
@@ -90,7 +101,7 @@
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp"></div>
         </div>
-        <div class="mdl-grid" style="margin: 0 15px 0">
+        <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--8-col">
             <div class="mdl-grid mdl-shadow--2dp">
               <iframe width='100%' height='400px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/dmitriconcha.291b36e6/attribution,zoompan,zoomwheel.html?access_token=pk.eyJ1IjoiZG1pdHJpY29uY2hhIiwiYSI6ImEyNDUzOTQ4YzAwMTYwZmZlNGVhZmIwZjMyM2Q0ODA5In0.6zecyGhlFiR2wGc8PEL3GQ'></iframe>
