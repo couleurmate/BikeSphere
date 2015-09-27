@@ -29,15 +29,8 @@
     <div id='map'></div>
 
       <script>
-        function getNonZeroRandomNumber(){
-          var random = Math.floor(Math.random()*199) - 99;
-          if(random==0) return getNonZeroRandomNumber();
-          return random;
-        }
-      </script>
-      <script>
         var pubnub = PUBNUB.init({ subscribe_key: 'sub-c-bb3668c2-642e-11e5-85c0-0619f8945a4f', ssl : true});
-        var channel = 'bike-map' + getNonZeroRandomNumber();
+        var channel = 'bike-map';
         eon.map({
           id: 'map',
           mb_token: 'pk.eyJ1IjoiZG1pdHJpY29uY2hhIiwiYSI6ImEyNDUzOTQ4YzAwMTYwZmZlNGVhZmIwZjMyM2Q0ODA5In0.6zecyGhlFiR2wGc8PEL3GQ',
@@ -51,8 +44,8 @@
 
                   var marker = new L.Marker(latlng, {
                       icon: L.icon({
-                          iconUrl: 'https://d30y9cdsu7xlg0.cloudfront.net/png/15274-200.png',
-                          iconSize: [24, 24]
+                          iconUrl: '../images/user.png',
+                          iconSize: [80, 80]
                       })
                   });
 
