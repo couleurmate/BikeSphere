@@ -4,6 +4,9 @@ html, h1, h2, h3, h4 {
 body {
   font-family: 'Questrial', 'Quicksand', 'Lato', 'Helvetica' sans-serif;
 }
+.fa {
+  vertical-align: middle;
+}
 .mdl-layout-title {
   font-family: 'Quicksand';
   font-size: 30px;
@@ -132,23 +135,47 @@ body {
 .bsphere-social {
   display: inline-block;
   text-align: center;
-  padding: 15px;
+  margin: 10px 0 20px;
 }
   .bsphere-help {
-    padding: 10px;
     color: #fff;
+    padding: 0;
   }
+    .bsphere-help:hover{
+      background-color: #fff;
+      color: #00BCD4;
+    }
   .bsphere-facebook {
-    padding: 10px;
     color: #fff;
+    padding: 0;
   }
+    .bsphere-facebook:hover{
+      background-color: #fff;
+      color: #00BCD4;
+    }
   .bsphere-twitter {
-    padding: 10px;
+    color: #fff;
+    padding: 0;
+  }
+    .bsphere-twitter:hover{
+      background-color: #fff;
+      color: #00BCD4;
+    }
+.bsphere-assistance {
+  position: relative;
+  top: -50px;
+  left: 30px;
+  background-color: #00BCD4;
+}
+  .bsphere-assistance:hover {
+    background-color: #fff965;
+  }
+  .button-assistance{
     color: #fff;
   }
+  
 .demo-content {
-  }
-
+}
 .demo-charts {
   margin: 16px;
   width: 100%;
@@ -234,14 +261,21 @@ _:-ms-input-placeholder, :root .demo-graph {
 .events mdl-grid {
   max-height: 100px;
 }
-.name-event {
-  display: inherit;
-  margin: 5px;
-  text-align: center;
+.bike-events {
+  background-color: #4fc3f7;
+  color: #fff;
+  padding: 16px;
 }
-.date-event {
-  display: block;
-}
+  .name-event {
+    display: inherit;
+    margin: 5px;
+    text-align: center;
+  }
+  .date-event {
+    display: block;
+  }
 .mdl-badge[data-badge]:after {
   right: -12px;
+  background-color: #fff;
+  color: #00acc1;
 }
