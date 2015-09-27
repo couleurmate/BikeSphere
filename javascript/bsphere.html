@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>bikesphere</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position:absolute;
+        top:0;
+        bottom:0;
+        width:100%;
+      }
+    </style>
+
+    <link href="lib/mapbox.css" rel="stylesheet" />
+    <script src="/lib/mapbox.js"></script>
+
+    <script src="/bower_components/pubnub/web/pubnub.min.js"></script>
+    <script src="/bower_components/subsub/subsub.js"></script>
+    <script src="/pubnub-mapbox.js"></script>
+
+  </head>
+  <body>
+    <div id='map'></div>
+
+      <script>
+        function getNonZeroRandomNumber(){
+          var random = Math.floor(Math.random()*199) - 99;
+          if(random==0) return getNonZeroRandomNumber();
+          return random;
+        }
+      </script>
+      <script>
+        var pubnub = PUBNUB.init({ subscribe_key: 'sub-c-bb3668c2-642e-11e5-85c0-0619f8945a4f', ssl : true});
+        var channel = 'bike-map' + getNonZeroRandomNumber();
+        eon.map({
+          id: 'map',
+          mb_token: 'pk.eyJ1IjoiZG1pdHJpY29uY2hhIiwiYSI6ImEyNDUzOTQ4YzAwMTYwZmZlNGVhZmIwZjMyM2Q0ODA5In0.6zecyGhlFiR2wGc8PEL3GQ',
+          mb_id: 'dmitriconcha.291b36e6',
+          channel: channel,
+          pubnub: pubnub,
+          options: {
+                zoomAnimation: false,
+              },
+            marker: function (latlng, data) {
+
+                  var marker = new L.Marker(latlng, {
+                      icon: L.icon({
+                          iconUrl: 'https://storage.googleapis.com/material-icons/external-assets/v1/icons/svg/ic_directions_bike_black_24px.svg',
+                          iconSize: [24, 24]
+                      })
+                  });
+
+                  var popup = '';
+                  if (data) {
+                      popup = 'Courier ' + data + '';
+                  }
+                  else {
+                      var popup = 'No data available';
+                  }
+
+                  marker.bindPopup(popup);
+
+                  return marker;
+              }
+            });
+
+                   var point = {
+                  latlng: [50.8503, 4.3517]
+              };
+
+      </script>
+  </body>
+</html>
