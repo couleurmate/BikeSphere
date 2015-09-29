@@ -176,7 +176,12 @@ body {
   .button-assistance{
     color: #fff;
   }
-
+  .app-assistance{
+    font-size: 48px;
+    color: #00acc1;
+    vertical-align: middle;
+    display: inline-block;
+  }
 .demo-content {
 }
 .demo-charts {
@@ -273,10 +278,18 @@ _:-ms-input-placeholder, :root .demo-graph {
     display: inherit;
     margin: 5px;
     text-align: center;
+    color: #000;
   }
   .date-event {
     display: block;
+    height: auto;
   }
+.app-features {
+  background-color: #4fc3f7;
+  color: #fff;
+  padding: 16px;
+  margin-top: 0;
+}
 .mdl-badge[data-badge]:after {
   right: -12px;
   background-color: #fff;
