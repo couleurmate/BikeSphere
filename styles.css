@@ -13,10 +13,11 @@ body {
   color: #2a61ae;
 }
   .title-bike {
-
+    color: #2a61ae;
   }
   .title-sphere {
     font-weight: bolder;
+    color: #2a61ae;
   }
   .con-title {
     font-family: 'Questrial', sans-serif;
@@ -162,9 +163,11 @@ body {
       color: #00BCD4;
     }
 .bsphere-assistance {
+  display: inline-block;
+  margin-right: 10px;
   position: relative;
   top: -50px;
-  left: 30px;
+  left: 20px;
   background-color: #00BCD4;
 }
   .bsphere-assistance:hover {
@@ -173,7 +176,7 @@ body {
   .button-assistance{
     color: #fff;
   }
-  
+
 .demo-content {
 }
 .demo-charts {
