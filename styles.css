@@ -138,29 +138,16 @@ body {
   text-align: center;
   margin: 10px 0 20px;
 }
-  .bsphere-help {
+  .bsphere-social-button {
     color: #fff;
     padding: 0;
   }
-    .bsphere-help:hover{
+    .bsphere-social-button:hover{
       background-color: #fff;
       color: #00BCD4;
     }
-  .bsphere-facebook {
-    color: #fff;
-    padding: 0;
-  }
-    .bsphere-facebook:hover{
-      background-color: #fff;
-      color: #00BCD4;
-    }
-  .bsphere-twitter {
-    color: #fff;
-    padding: 0;
-  }
-    .bsphere-twitter:hover{
-      background-color: #fff;
-      color: #00BCD4;
+    .bsphere-social-button.mdl-button {
+      min-width: 40px;
     }
 .bsphere-assistance {
   display: inline-block;
